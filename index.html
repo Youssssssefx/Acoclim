@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACO CLIM — Solutions CVC au Maroc</title>
+  <meta name="description" content="ACO CLIM - Expert en climatisation, froid commercial et solutions CVC au Maroc. Installation, maintenance et dépannage 24/7.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING WHATSAPP BUTTON
+  ═══════════════════════════════════════════ -->
+
+  <a href="https://wa.me/212661651070?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20vos%20services%20de%20climatisation%20et%20CVC.%20Pouvez-vous%20me%20donner%20plus%20d'informations%20?"
+     target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="whatsapp-tooltip">Contactez-nous</span>
+  </a>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#accueil" class="logo">
+        <div class="logo-badge">
+          <img src="brand_assets/daoudia.png" alt="ACO CLIM" class="logo-img">
+        </div>
+      </a>
+
+      <ul class="nav-list" id="navList">
+        <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#pourquoi" class="nav-link">Pourquoi ACO CLIM ?</a></li>
+        <li><a href="#temoignages" class="nav-link">Témoignages</a></li>
+        <li><a href="#catalogue" class="nav-link">Catalogue</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="https://wa.me/212661651070?text=Bonjour%20Aco%20Clim%2C%20je%20souhaite%20am%C3%A9liorer%20mon%20confort%20thermique%20et%20r%C3%A9duire%20ma%20consommation.%20Puis-je%20b%C3%A9n%C3%A9ficier%20d%27un%20diagnostic%20gratuit%20%3F%20Merci%20!"
+         target="_blank" class="btn btn-nav">
+        Diagnostic Gratuit
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="accueil">
+    <!-- Background layers -->
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="fog fog-1"></div>
+      <div class="fog fog-2"></div>
+      <div class="fog fog-3"></div>
+      <div class="hero-orb orb-blue"></div>
+      <div class="hero-orb orb-red"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Content -->
+    <div class="container hero-content">
+      <div class="hero-badge fade-up">
+        <span class="badge-dot"></span>
+        Solutions CVC Professionnelles au Maroc
+      </div>
+
+      <h1 class="hero-title fade-up">
+        Solutions CVC <span class="title-gradient">intelligentes</span><br>
+        pour un confort <span class="title-underline">maîtrisé</span>
+      </h1>
+
+      <p class="hero-subtitle fade-up">
+        Installation, maintenance et dépannage de systèmes de climatisation,<br>
+        froid commercial et solutions sanitaires — partout au Maroc.
+      </p>
+
+      <div class="hero-cta fade-up">
+        <a href="https://wa.me/212661651070?text=Bonjour%20Aco%20Clim%2C%20je%20souhaite%20am%C3%A9liorer%20mon%20confort%20thermique%20et%20r%C3%A9duire%20ma%20consommation.%20Puis-je%20b%C3%A9n%C3%A9ficier%20d%27un%20diagnostic%20gratuit%20%3F%20Merci%20!"
+           target="_blank" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          Bénéficier d'un diagnostic gratuit
+        </a>
+        <a href="#services" class="btn btn-ghost btn-lg">
+          Découvrir nos services
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <a href="#services" class="scroll-indicator">
+      <span>Défiler</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Ce que nous faisons</span>
+        <h2 class="section-title">Nos Services</h2>
+        <p class="section-subtitle">Des solutions complètes pour tous vos besoins en climatisation, froid commercial et contrats de maintenance</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- ── Card 1: Climatisation & CVC ── -->
+        <div class="service-card reveal" data-card="1">
+          <div class="service-img-area img-slider" data-slider>
+            <div class="slider-track">
+              <img src="images/climatisation-cvc/2.jpg.jpg" alt="Système CVC industriel">
+            </div>
+            <div class="slider-dots"></div>
+            <button class="slider-prev" aria-label="Précédent">&#8249;</button>
+            <button class="slider-next" aria-label="Suivant">&#8250;</button>
+          </div>
+          <div class="service-card-inner">
+            <div class="service-header">
+              <div class="service-icon-wrap">
+                <svg class="service-icon" viewBox="0 0 56 56" fill="none">
+                  <rect x="6" y="16" width="44" height="22" rx="5" stroke="currentColor" stroke-width="2.5"/>
+                  <circle cx="28" cy="27" r="6" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M14 27h6M36 27h6M28 17v6M28 33v6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M10 38v4M46 38v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M22 27l3 3 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+                </svg>
+              </div>
+              <div class="service-card-number">01</div>
+            </div>
+
+            <h3 class="service-title">Climatisation & CVC</h3>
+            <p class="service-desc">Installation et maintenance de systèmes de climatisation pour particuliers et entreprises.</p>
+
+            <div class="service-details">
+              <div class="service-sub-group">
+                <h4 class="sub-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Installation
+                </h4>
+                <ul class="service-list">
+                  <li>Climatiseurs Split</li>
+                  <li>Climatiseurs gainables</li>
+                  <li>Systèmes centralisés</li>
+                </ul>
+              </div>
+              <div class="service-sub-group">
+                <h4 class="sub-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Maintenance & SAV
+                </h4>
+                <ul class="service-list">
+                  <li>Diagnostic toutes marques</li>
+                  <li>Réparation & dépannage</li>
+                  <li>Nettoyage & entretien</li>
+                  <li>Recharge de gaz frigorigène</li>
+                  <li>Mise en service</li>
+                  <li>Contrôle d'étanchéité</li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="https://wa.me/212661651070?text=Bonjour%20Aco%20Clim%2C%20je%20souhaite%20planifier%20une%20intervention%20pour%20mon%20syst%C3%A8me%20de%20climatisation%2FCVC.%20Pouvez-vous%20m%27accompagner%20rapidement%20%3F%20Merci%20!"
+               target="_blank" class="service-cta-btn">
+              Planifier une intervention
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- ── Card 2: Froid Commercial ── -->
+        <div class="service-card reveal" data-card="2">
+          <div class="service-popular-badge">Le plus demandé</div>
+          <div class="service-img-area img-slider" data-slider>
+            <div class="slider-track">
+              <img src="images/10 photos/pexels-shvetsa-5953713.jpg" alt="Technicien CVC">
+            </div>
+            <div class="slider-dots"></div>
+            <button class="slider-prev" aria-label="Précédent">&#8249;</button>
+            <button class="slider-next" aria-label="Suivant">&#8250;</button>
+          </div>
+          <div class="service-card-inner">
+            <div class="service-header">
+              <div class="service-icon-wrap service-icon-wrap--red">
+                <svg class="service-icon" viewBox="0 0 56 56" fill="none">
+                  <path d="M28 8v40M8 28h40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M28 8l-4 5M28 8l4 5M28 48l-4-5M28 48l4-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M8 28l5-4M8 28l5 4M48 28l-5-4M48 28l-5 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M15.5 15.5l3.5 3.5M37 19l3.5-3.5M15.5 40.5l3.5-3.5M37 37l3.5 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                </svg>
+              </div>
+              <div class="service-card-number">02</div>
+            </div>
+
+            <h3 class="service-title">Froid Commercial & Industriel</h3>
+            <p class="service-desc">Chambres froides, plomberie et réseaux sanitaires pour professionnels.</p>
+
+            <div class="service-details">
+              <div class="service-sub-group">
+                <h4 class="sub-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Chambres Froides
+                </h4>
+                <ul class="service-list">
+                  <li>Chambres froides positives</li>
+                  <li>Chambres froides négatives</li>
+                  <li>Maintenance & contrats</li>
+                  <li>Dépannage rapide</li>
+                </ul>
+              </div>
+              <div class="service-sub-group">
+                <h4 class="sub-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Plomberie & Sanitaires
+                </h4>
+                <ul class="service-list">
+                  <li>Réseaux sanitaires complets</li>
+                  <li>Équipements sanitaires</li>
+                  <li>Chauffe-eau</li>
+                  <li>Fuites & infiltrations</li>
+                  <li>Débouchage conduites</li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="https://wa.me/212661651070?text=Bonjour%20Aco%20Clim%2C%20j%27ai%20besoin%20d%27une%20intervention%20pour%20une%20installation%20de%20froid%20commercial%2Findustriel.%20Pouvez-vous%20organiser%20cela%20rapidement%20%3F%20Merci%20!"
+               target="_blank" class="service-cta-btn">
+              Demander une intervention
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- ── Card 3: Contrats & Services Pro ── -->
+        <div class="service-card reveal" data-card="3">
+          <div class="service-img-area img-slider" data-slider>
+            <div class="slider-track">
+              <img src="images/10 photos/businessman-examining-papers-table.jpg" alt="Contrats & Services Pro">
+            </div>
+            <div class="slider-dots"></div>
+            <button class="slider-prev" aria-label="Précédent">&#8249;</button>
+            <button class="slider-next" aria-label="Suivant">&#8250;</button>
+          </div>
+          <div class="service-card-inner">
+            <div class="service-header">
+              <div class="service-icon-wrap service-icon-wrap--blue">
+                <svg class="service-icon" viewBox="0 0 56 56" fill="none">
+                  <rect x="10" y="8" width="36" height="40" rx="4" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M18 20h20M18 27h20M18 34h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="40" cy="40" r="8" fill="currentColor" opacity="0.15"/>
+                  <path d="M37 40l2.5 2.5 4.5-4.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="service-card-number">03</div>
+            </div>
+
+            <h3 class="service-title">Contrats & Services Pro</h3>
+            <p class="service-desc">Contrats de maintenance périodique pour particuliers et entreprises.</p>
+
+            <div class="service-details">
+              <div class="service-sub-group">
+                <h4 class="sub-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Avantages du contrat
+                </h4>
+                <ul class="service-list">
+                  <li>Suivi périodique programmé</li>
+                  <li>Réduction des pannes imprévues</li>
+                  <li>Intervention prioritaire 24/7</li>
+                  <li>Optimisation consommation</li>
+                  <li>Tarifs préférentiels</li>
+                  <li>Rapport d'entretien détaillé</li>
+                </ul>
+              </div>
+              <div class="service-sub-group">
+                <h4 class="sub-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  Pour qui ?
+                </h4>
+                <ul class="service-list">
+                  <li>Particuliers & résidences</li>
+                  <li>Hôtels & restaurants</li>
+                  <li>Bureaux & commerces</li>
+                  <li>Entrepôts & industries</li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="https://wa.me/212661651070?text=Bonjour%20Aco%20Clim%2C%20je%20souhaite%20s%C3%A9curiser%20et%20optimiser%20mes%20installations%20avec%20un%20contrat%20de%20maintenance.%20Pouvez-vous%20me%20proposer%20une%20solution%20adapt%C3%A9e%20%3F%20Merci%20!"
+               target="_blank" class="service-cta-btn">
+              Souscrire un contrat
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       WHY CHOOSE US
+  ═══════════════════════════════════════════ -->
+  <section class="why-us" id="pourquoi">
+    <div class="container">
+      <div class="why-us-inner reveal">
+        <div class="why-us-text">
+          <span class="section-label">Pourquoi ACO CLIM ?</span>
+          <h2 class="section-title">L'excellence au service<br>de votre confort</h2>
+          <p>Depuis notre création, ACO CLIM s'est imposée comme un partenaire de confiance dans le domaine du chauffage, de la ventilation et de la climatisation au Maroc. Notre expertise technique, combinée à notre réactivité et notre engagement envers la satisfaction client, nous permet d'offrir des solutions CVC adaptées à chaque besoin. Que vous soyez un particulier recherchant le confort optimal pour votre foyer, un restaurateur nécessitant des équipements frigorifiques fiables, ou une entreprise souhaitant optimiser ses installations, nous mettons à votre service notre savoir-faire, notre équipement de pointe et notre disponibilité 24/7. Chez ACO CLIM, votre confort est notre priorité, et votre satisfaction notre meilleure récompense.</p>
+          <ul class="why-list">
+            <li>
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Techniciens certifiés et expérimentés
+            </li>
+            <li>
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Intervention rapide sous 24h
+            </li>
+            <li>
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Devis gratuit sans engagement
+            </li>
+            <li>
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Service après-vente réactif
+            </li>
+          </ul>
+          <a href="https://wa.me/212661651070?text=Bonjour%20Aco%20Clim%2C%0AJe%20souhaite%20%C3%A9changer%20avec%20un%20expert%20afin%20d%27optimiser%20mes%20installations%20et%20%C3%A9tudier%20les%20solutions%20adapt%C3%A9es%20%C3%A0%20mon%20projet.%20Merci%20!"
+             target="_blank" class="btn btn-primary">
+            Parler à un expert CVC
+          </a>
+        </div>
+        <div class="why-carousel" id="whyCarousel">
+          <div class="why-carousel-track">
+            <div class="why-carousel-slide">
+              <img src="images/climatisation-cvc/1.jpg.jpg" alt="Installation climatiseur">
+            </div>
+            <div class="why-carousel-slide">
+              <img src="images/climatisation-cvc/2.jpg.jpg" alt="Système CVC industriel">
+            </div>
+            <div class="why-carousel-slide">
+              <img src="images/climatisation-cvc/4.jpg.jpg" alt="Maintenance climatisation">
+            </div>
+            <div class="why-carousel-slide">
+              <img src="images/10 photos/3d-rendering-ventilation-system.jpg" alt="Système de ventilation">
+            </div>
+            <div class="why-carousel-slide">
+              <img src="images/10 photos/defective-manometers-zoom-shot.jpg" alt="Contrôle manomètres">
+            </div>
+            <div class="why-carousel-slide">
+              <img src="images/10 photos/elasticcomputefarm-air-conditioner-1185041.jpg" alt="Climatiseur">
+            </div>
+            <div class="why-carousel-slide">
+              <img src="images/10 photos/low-angle-shot-metal-black-ceiling-with-white-ventilation-pipes.jpg" alt="Réseaux de ventilation">
+            </div>
+            <div class="why-carousel-slide">
+              <img src="images/10 photos/modern-autonomous-heating-system-boiler-room.jpg" alt="Chaufferie moderne">
+            </div>
+            <div class="why-carousel-slide">
+              <img src="images/10 photos/pexels-shvetsa-5953713.jpg" alt="Technicien CVC">
+            </div>
+            <div class="why-carousel-slide">
+              <img src="images/10 photos/ventilation-duct-building-roof.jpg" alt="Conduits ventilation toiture">
+            </div>
+          </div>
+
+          <!-- Caption overlay -->
+          <div class="why-carousel-caption" id="whyCaption"></div>
+
+          <!-- Controls -->
+          <button class="why-carousel-btn why-carousel-prev" id="whyPrev" aria-label="Précédent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="why-carousel-btn why-carousel-next" id="whyNext" aria-label="Suivant">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+
+          <!-- Dots -->
+          <div class="why-carousel-dots" id="whyDots"></div>
+
+          <!-- Counter -->
+          <div class="why-carousel-counter" id="whyCounter">1 / 10</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials" id="temoignages">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Ce qu'ils disent</span>
+        <h2 class="section-title">Témoignages</h2>
+        <p class="section-subtitle">La satisfaction de nos clients est notre plus grande récompense</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal">
+          <div class="stars">
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"Nous avons fait appel à ACO CLIM pour l'installation de notre chambre froide. Travail impeccable, respect des délais et équipe très professionnelle. Depuis sa mise en service, le système fonctionne de manière optimale et sans problème."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">KM</div>
+            <div class="author-info">
+              <strong>Karim Mansouri</strong>
+              <span>Gérant de restaurant, Casablanca</span>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars">
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"ACO CLIM gère la maintenance de nos 12 unités de climatisation dans nos immeubles de bureaux. Le contrat de maintenance est très avantageux et les techniciens interviennent toujours dans les délais convenus. Je recommande vivement."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #9d211f, #c0392b);">SB</div>
+            <div class="author-info">
+              <strong>Salma Berrada</strong>
+              <span>Directrice, société immobilière, Rabat</span>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars">
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"Nous avons confié la climatisation de notre salle à ACO CLIM et le résultat est parfait. L'installation a été réalisée proprement sans perturber nos adhérents. Le suivi après-vente est sérieux et réactif. Nos clients sont satisfaits du confort thermique !"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #002e7f, #1a56c4);">RA</div>
+            <div class="author-info">
+              <strong>Rachid Amrani</strong>
+              <span>Gérant de salle de sport, Casablanca</span>
+            </div>
+          </div>
+          <div class="testimonial-quote">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO / CATALOGUE
+  ═══════════════════════════════════════════ -->
+  <section class="portfolio" id="catalogue">
+    <div class="container">
+      <div class="portfolio-inner reveal">
+        <div class="portfolio-bg-pattern"></div>
+        <div class="portfolio-content">
+          <span class="section-label" style="color: rgba(255,255,255,0.7);">Nos réalisations</span>
+          <h2 class="portfolio-title">Découvrez nos projets<br>sur WhatsApp Business</h2>
+          <p class="portfolio-subtitle">
+            Parcourez notre catalogue de réalisations — installations, chambres froides, projets industriels et bien plus encore.
+          </p>
+          <a href="https://wa.me/c/212661651070" target="_blank" class="btn btn-white btn-lg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Voir notre catalogue de projets
+          </a>
+        </div>
+        <div class="portfolio-icons">
+          <div class="p-icon p-icon-1">
+            <svg viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2">
+              <rect x="6" y="16" width="36" height="20" rx="4"/>
+              <circle cx="24" cy="26" r="5"/>
+              <path d="M6 36v4M42 36v4"/>
+            </svg>
+          </div>
+          <div class="p-icon p-icon-2">
+            <svg viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2">
+              <path d="M24 6v36M6 24h36"/>
+              <circle cx="24" cy="24" r="5"/>
+            </svg>
+          </div>
+          <div class="p-icon p-icon-3">
+            <svg viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2">
+              <rect x="10" y="8" width="28" height="32" rx="3"/>
+              <path d="M17 18h14M17 24h14M17 30h10"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Parlons-en</span>
+        <h2 class="section-title">Contactez-nous</h2>
+        <p class="section-subtitle">Besoin d'une intervention ou d'un bilan technique gratuit ? Notre équipe est à votre écoute et vous répond rapidement.</p>
+      </div>
+
+      <div class="contact-split reveal">
+
+        <!-- ── LEFT: Email contact form ── -->
+        <div class="contact-form-panel">
+          <div class="contact-form-header">
+            <div class="contact-form-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="contact-form-title">Envoyer un email</h3>
+              <p class="contact-form-subtitle">acoclim.contact@gmail.com</p>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-nom">Nom &amp; Prénom <span class="required">*</span></label>
+                <input type="text" id="cf-nom" name="nom" placeholder="" required>
+              </div>
+              <div class="form-group">
+                <label for="cf-ville">Ville <span class="required">*</span></label>
+                <input type="text" id="cf-ville" name="ville" placeholder="" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Type de client <span class="required">*</span></label>
+              <div class="form-radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="type" value="Particulier" checked>
+                  <span>Particulier</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="type" value="Entreprise">
+                  <span>Entreprise</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group" id="entrepriseGroup" style="display:none;">
+              <label for="cf-entreprise">Nom de l'entreprise <span class="required">*</span></label>
+              <input type="text" id="cf-entreprise" name="entreprise" placeholder="Ex : ACO CLIM SARL">
+            </div>
+
+            <div class="form-group">
+              <label for="cf-message">Message <span class="required">*</span></label>
+              <textarea id="cf-message" name="message" rows="4" placeholder="Décrivez votre besoin..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary contact-form-submit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Envoyer le message
+            </button>
+          </form>
+        </div>
+
+        <!-- ── RIGHT: WhatsApp card ── -->
+        <div class="contact-wa-panel">
+          <div class="contact-wa-inner">
+            <div class="contact-wa-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+            </div>
+            <h3 class="contact-wa-title">Contactez-nous sur WhatsApp</h3>
+            <p class="contact-wa-text">Disponible <strong>7j/7 — 24h/24</strong>. Posez vos questions, demandez un devis ou planifiez une intervention directement depuis WhatsApp.</p>
+            <p class="contact-wa-number">+212 661 651 070</p>
+            <a href="https://wa.me/212661651070?text=Bonjour%20Aco%20Clim%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services.%20Merci%20!"
+               target="_blank" class="btn btn-wa-contact">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              Ouvrir WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="logo-badge logo-badge-sm">
+              <img src="brand_assets/daoudia.png" alt="ACO CLIM" class="logo-img-footer">
+            </div>
+          </div>
+          <p class="footer-tagline">Votre expert en solutions CVC au Maroc</p>
+          <p class="footer-desc">Installation, maintenance et dépannage de systèmes de climatisation,<br>froid commercial et solutions sanitaires — partout au Maroc.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://wa.me/c/212661651070" target="_blank">Catalogue Projets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Nos Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Climatisation & CVC</a></li>
+            <li><a href="#services">Froid Commercial</a></li>
+            <li><a href="#services">Chambres Froides</a></li>
+            <li><a href="#services">Plomberie Sanitaire</a></li>
+            <li><a href="#services">Contrats Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              <a href="https://wa.me/212661651070" target="_blank">+212 661 651 070</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <a href="mailto:acoclim.contact@gmail.com">acoclim.contact@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>7j/7 — 24h/24</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 ACO CLIM — Tous droits réservés</p>
+        <p>Conçu avec soin pour votre confort</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

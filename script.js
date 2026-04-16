@@ -229,25 +229,11 @@ document.querySelectorAll('[data-slider]').forEach(slider => {
   const slides    = Array.from(carousel.querySelectorAll('.why-carousel-slide'));
   const dotsWrap  = document.getElementById('whyDots');
   const counter   = document.getElementById('whyCounter');
-  const caption   = document.getElementById('whyCaption');
   const prevBtn   = document.getElementById('whyPrev');
   const nextBtn   = document.getElementById('whyNext');
   const total     = slides.length;
   let   current   = 0;
   let   timer     = null;
-
-  const captions  = [
-    'Installation de climatiseurs',
-    'Systèmes CVC industriels',
-    'Maintenance & entretien',
-    'Système de ventilation 3D',
-    'Contrôle & vérification manomètres',
-    'Installation climatiseur',
-    'Réseaux de ventilation',
-    'Chaufferie moderne',
-    'Technicien CVC en intervention',
-    'Conduits de ventilation en toiture'
-  ];
 
   // Build dots
   const dots = slides.map((_, i) => {
@@ -266,7 +252,6 @@ document.querySelectorAll('[data-slider]').forEach(slider => {
     slides[current].classList.add('is-active');
     dots.forEach((d, i) => d.classList.toggle('active', i === current));
     counter.textContent = `${current + 1} / ${total}`;
-    caption.textContent  = captions[current] || '';
   }
 
   function resetTimer() {

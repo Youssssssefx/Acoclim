@@ -1365,23 +1365,22 @@ section { padding: 6rem 0; }
   box-shadow: 0 30px 80px rgba(0,46,127,0.35);
 }
 
-/* Blurred background image layer */
+/* Background image layer */
 .portfolio-inner::before {
   content: '';
   position: absolute;
-  inset: -30px;
+  inset: 0;
   background: url('images/10 photos/blured.png') center/cover no-repeat;
-  filter: blur(10px);
-  transform: scale(1.06);
   z-index: 0;
 }
 
-/* Dark overlay for text readability */
+/* Blue gradient overlay at low opacity */
 .portfolio-inner::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0,13,51,0.72) 0%, rgba(0,46,127,0.65) 100%);
+  background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 50%, #1a3a7a 100%);
+  opacity: 0.55;
   z-index: 1;
 }
 

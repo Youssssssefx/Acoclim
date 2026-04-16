@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acoclim-6kpt.vercel.app/sitemap.xml

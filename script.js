@@ -30,17 +30,23 @@ navList.querySelectorAll('.nav-link').forEach(link => {
 const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.nav-link');
 
+let navRafPending = false;
 const highlightNav = () => {
-  const scrollY = window.scrollY + 120;
-  sections.forEach(section => {
-    const top    = section.offsetTop;
-    const height = section.offsetHeight;
-    const id     = section.getAttribute('id');
-    if (scrollY >= top && scrollY < top + height) {
-      navLinks.forEach(l => l.classList.remove('active'));
-      const active = document.querySelector(`.nav-link[href="#${id}"]`);
-      if (active) active.classList.add('active');
-    }
+  if (navRafPending) return;
+  navRafPending = true;
+  requestAnimationFrame(() => {
+    const scrollY = window.scrollY + 120;
+    sections.forEach(section => {
+      const top    = section.offsetTop;
+      const height = section.offsetHeight;
+      const id     = section.getAttribute('id');
+      if (scrollY >= top && scrollY < top + height) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.nav-link[href="#${id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+    navRafPending = false;
   });
 };
 window.addEventListener('scroll', highlightNav, { passive: true });
@@ -141,14 +147,22 @@ tiltCards.forEach(card => {
   });
 });
 
-/* ── Parallax on hero orbs ── */
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  const orbBlue = document.querySelector('.orb-blue');
-  const orbRed  = document.querySelector('.orb-red');
-  if (orbBlue) orbBlue.style.transform = `translateY(${scrollY * 0.15}px)`;
-  if (orbRed)  orbRed.style.transform  = `translateY(${-scrollY * 0.1}px)`;
-}, { passive: true });
+/* ── Parallax on hero orbs (rAF-throttled) ── */
+const orbBlue = document.querySelector('.orb-blue');
+const orbRed  = document.querySelector('.orb-red');
+if (orbBlue || orbRed) {
+  let rafPending = false;
+  window.addEventListener('scroll', () => {
+    if (rafPending) return;
+    rafPending = true;
+    requestAnimationFrame(() => {
+      const scrollY = window.scrollY;
+      if (orbBlue) orbBlue.style.transform = `translateY(${scrollY * 0.15}px)`;
+      if (orbRed)  orbRed.style.transform  = `translateY(${-scrollY * 0.1}px)`;
+      rafPending = false;
+    });
+  }, { passive: true });
+}
 
 /* ── Image sliders inside service cards ── */
 document.querySelectorAll('[data-slider]').forEach(slider => {
